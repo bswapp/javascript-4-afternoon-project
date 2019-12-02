@@ -29,8 +29,16 @@
   Call your class Employee and receive all the data in the constructor in the order listed above.
 */
 
-//Code Here
-
+function Employee(first_name, last_name, email, age) {
+  this.first_name = first_name;
+  this.last_name = last_name;
+  this.email = email;
+  this.age = age;
+  this.makeWidget = function() {
+    return `${first_name} ${last_name} Widget`;
+  };
+}
+Employee();
 
 ////////// PROBLEM 2 //////////
 
@@ -47,8 +55,15 @@
   Call your new class Manager
 */
 
-//Code Here
-
+const Manager = function(first_name, last_name, email, age, reports) {
+  this.first_name = first_name;
+  this.last_name = last_name;
+  this.email = email;
+  this.age = age;
+  this.reports = reports;
+  this.hire = function() {};
+  this.fire = function() {};
+};
 
 ////////// PROBLEM 3 //////////
 
@@ -72,8 +87,6 @@
 */
 
 //Code Here
-
-
 
 ////////// PROBLEM 4 - Black Diamond //////////
 
@@ -99,5 +112,3 @@
 */
 
 //Code Here
-
-
